@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Hurricane Tweets</title>
+    <!-- link to the Leaflet stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+    <!-- link to the Leaflet JavaScript library-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!-- link to the stylesheet-->
+    <link rel="stylesheet" href="style.css" /> 
+	<!-- link to the JQuery library-->
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- link to your JS file-->
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+
+<!--Initialize the map-->
+<body onload = initialize()> 
+	<!--Create a title-->
+	<div class = "title1">
+		<h1>Hurricane Tweets</a></h1>
+	</div>
+
+	<div class="wrapper">
+		<div class="button-container">
+			<div class="button-with-text">
+				<button onclick="fetchData()">Fetch Data</button>
+				<span>Click this button to add all the tweets markup about Hurricane to the map below.</span>
+			</div>
+			<div class="button-with-text">
+				<button onclick="clearData()">Clear Data</button>
+				<span>Click this buttion to remove all the tweets markup on the map.</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="map-container">
+		<!--The map div which hosts map object -->
+		<div id="maptweet"></div>
+	</div>
+</body>
